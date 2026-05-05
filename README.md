@@ -1,22 +1,34 @@
-# 💬 Chat em Rede com Python (Sockets, Threads e Tkinter)
+# Servidor de Chat Ao Vivo 💬
 
-Projeto desenvolvido no 2º semestre da PUC-PR: um **sistema de chat em rede** com interface gráfica, que permite a comunicação entre máquinas conectadas à mesma rede local. O projeto suporta múltiplos usuários, mensagens privadas e atualização dinâmica da lista de conectados.
+Este projeto consiste em um servidor de chat ao vivo desenvolvido em Python, utilizando **Sockets** e **Threads**. Ele permite que diferentes usuários se conectem ao servidor e interajam entre si através de mensagens públicas e privadas, além de possuir funcionalidades como expulsão de usuários e uma interface simples para exibição das mensagens.
+
+---
+
+## 📋 Descrição do Projeto
+
+Este programa cria um servidor de chat ao vivo onde os usuários podem:
+- Enviar mensagens públicas para todos os conectados.
+- Enviar mensagens privadas para um usuário específico.
+- Ser expulso do servidor por um administrador.
+- Visualizar as mensagens enviadas através de uma interface gráfica simples.
+
+---
 
 ## 🚀 Funcionalidades
 
-- 🖥️ Interface gráfica com **Tkinter**.
-- 🌐 Comunicação entre clientes e servidor via **Sockets**.
-- 🔁 **Threading** para suportar múltiplas conexões simultâneas.
-- 👥 Visualização em tempo real dos **usuários conectados**.
-- 📩 Envio de **mensagens privadas** entre usuários.
-- 🔄 Atualização automática da lista de usuários ao conectar/desconectar.
-- ❌ Ao fechar a interface do Tkinter, o usuário é desconectado, os demais são notificados e a lista é atualizada.
+1. **Conexões Simultâneas**: Permite que vários usuários se conectem ao servidor ao mesmo tempo.
+2. **Mensagens Públicas**: Envio de mensagens visíveis a todos os usuários conectados.
+3. **Mensagens Privadas**: Envio de mensagens direcionadas a um único usuário.
+4. **Expulsão de Usuários**: Usuários podem ser expulsos do servidor por um administrador.
+5. **Interface Gráfica**: Uma interface simples para exibição das mensagens.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
 - **Python**
-- **Socket**: Comunicação cliente-servidor.
-- **Threading**: Gerenciamento de múltiplos clientes simultaneamente.
-- **Tkinter**: Interface gráfica básica para o chat.
+- **Socket**: Para a comunicação entre o servidor e os clientes.
+- **Threading**: Para permitir múltiplas conexões simultâneas.
+- **Tkinter**: Para a interface gráfica básica.
 
-
+---
